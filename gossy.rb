@@ -5,20 +5,20 @@
 class Gossy < Formula
   desc "Gossy: A versatile AWS CLI tool for efficient management across AWS services."
   homepage "https://github.com/mangchhe/homebrew-gossy"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/mangchhe/gossy/releases/download/v0.0.1/gossy_Darwin_x86_64.tar.gz"
-      sha256 "a4c4443684e1547643b94713fc1f0007367a8744c37b0b295565dcadb160f63a"
+      url "https://github.com/mangchhe/gossy/releases/download/v0.0.2/gossy_Darwin_x86_64.tar.gz"
+      sha256 "23aca664791326e0d4c65b2b6dce100ecc6be2f4f2126a2ccc589bd5c2985463"
 
       def install
         bin.install "gossy"
       end
     end
     on_arm do
-      url "https://github.com/mangchhe/gossy/releases/download/v0.0.1/gossy_Darwin_arm64.tar.gz"
-      sha256 "1027ddf568ec349e708d886c7bbfcdbc8c619679234407da66fa683c0f401f69"
+      url "https://github.com/mangchhe/gossy/releases/download/v0.0.2/gossy_Darwin_arm64.tar.gz"
+      sha256 "a810cf3d299bda6a84ea3e7278d5300bd58ddfbdf3aaa325b52c8ad9a59d123e"
 
       def install
         bin.install "gossy"
@@ -29,8 +29,8 @@ class Gossy < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mangchhe/gossy/releases/download/v0.0.1/gossy_Linux_x86_64.tar.gz"
-        sha256 "150f55cfce018455f70c08206500698354522d5ad56c981085b9f01844c9829d"
+        url "https://github.com/mangchhe/gossy/releases/download/v0.0.2/gossy_Linux_x86_64.tar.gz"
+        sha256 "af3194d6d11fd69d98dc7cabf47478fc46c82f5dc868402f1ad02b38a85a8422"
 
         def install
           bin.install "gossy"
@@ -39,8 +39,8 @@ class Gossy < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mangchhe/gossy/releases/download/v0.0.1/gossy_Linux_arm64.tar.gz"
-        sha256 "f75745bb890bfdee703f2d6a80a0b8b2715c1151faa0659d70f30829c9f3cce6"
+        url "https://github.com/mangchhe/gossy/releases/download/v0.0.2/gossy_Linux_arm64.tar.gz"
+        sha256 "99fa738659e4ba495840240dd1ba0aeaa20ada324922df8119a382a8bcfea25c"
 
         def install
           bin.install "gossy"
